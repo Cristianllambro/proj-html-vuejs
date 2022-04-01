@@ -4,6 +4,9 @@
     <UnderHeader />
     <ServiceContent />
     <ToolContent />
+    <SquareCream />
+    <ReviewContent />
+    <BlogContent />
   </div>
 </template>
 
@@ -12,6 +15,9 @@ import HeaderContent from './components/HeaderContent'
 import UnderHeader from './components/UnderHeader'
 import ServiceContent from './components/ServiceContent.vue'
 import ToolContent from './components/ToolContent.vue'
+import SquareCream from './components/SquareCream.vue'
+import ReviewContent from './components/ReviewContent.vue'
+import BlogContent from './components/BlogContent.vue'
 
 export default {
   name: 'App',
@@ -20,6 +26,9 @@ export default {
     UnderHeader,
     ServiceContent,
     ToolContent,
+    SquareCream,
+    ReviewContent,
+    BlogContent,
   }
 }
 </script>
@@ -34,5 +43,8 @@ export default {
 }
 p{
   font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3{
+  font-family: 'Abril Fatface', cursive;
 }
 </style>
