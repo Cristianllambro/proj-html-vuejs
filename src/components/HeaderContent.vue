@@ -10,11 +10,6 @@
         </div>
     </nav>
 
-    <!-- squares white -->
-    <div class="squares">
-        <div class="square1">1</div>
-        <div class="square2">2</div>
-    </div>
 
     <div class="main">
         <!-- section title -->
@@ -27,7 +22,7 @@
 
         <!-- img -->
         <div class="img-under-nav">
-            <img src="" alt="">
+            <img src="../../public/img/avadabarbers_hero_focalmirror-400x550.png" alt="">
         </div>
 
     </div>
@@ -43,10 +38,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+@import "../../public/variable.scss";
 
 .container{
-    width: 100vw;
+    width: 100%;
     height: 90vh;
     background-image: url(../../public/img/avadabarbers-homepage-hero-bg.jpg);
     background-size: cover
@@ -66,7 +61,6 @@ nav{
         .fa-cart-shopping{
             font-size: 15px;
             margin-right: 1rem;
-            
         }
 
         .fa-bars{
@@ -75,38 +69,53 @@ nav{
     }
 }
 
-.squares{
-    width: 100%;
-    height: 200px;
+.main{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
 }
 
 .title{
-    width: 1000px;
-    height: calc(90vh - 100px);
+    width: 45%;
+    height: calc(90vh - 300px);
     margin: 0 auto;
+    margin-top: 180px;
     
     h1{
         color: white;
-        font-size: 50px;
+        font-size: 70px;
         font-family: 'Abril Fatface', cursive;
         padding-bottom: .8rem;
     }
 
     .line{
-        width: 150px;
+        width: 200px;
         height: 3px;
-        background-color: orange;
-        margin-bottom: 1.2rem;
+        background-color: $light_gold;
+        margin-bottom: 1.7rem;
     }
 
     p{
         color: #505050 ;
-        margin-bottom: 1.2rem;
+        margin-bottom: 1.7rem;
     }
 
     .btn-nav{
+        color: $light_gold;
+        padding: .8rem 2rem;
         background-color: transparent;
-        border: 2px solid ;
+        border: 2px solid $light_gold;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.1);
+            color: $orange;
+            border: 2px solid $orange;
+        }
     }
+
+}
+
+.img-under-nav{
+    width: 40%;
 }
 </style>
