@@ -8,7 +8,7 @@
         <div class="item" >
             <div class="review" v-for="element in arrReviewUser" :key="element.id">
                 <p class="txt-user">{{ element.text }}</p>
-                <img src="../../public/img/avadabarbers-trimcut-gallery6-200x200.jpg" alt="">
+                <img :src="element.img" :alt="element.userName">
                 <p class="name-user">{{ element.userName }}</p>
             </div>        
         </div>
@@ -17,6 +17,9 @@
 </template>
 
 <script>
+import user1 from '../../public/img/avadabarbers-trimcut-gallery6-200x200.jpg'
+import user2 from '../../public/img/avadabarbers-trimcut-gallery7-200x201.jpg'
+import user3 from '../../public/img/avadabarbers-trimcut-gallery3-200x201.jpg'
 export default {
     name: 'ReviewContent',
     data () {
@@ -26,19 +29,19 @@ export default {
                 {
                     id: 1,
                     text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione dicta asperiores, ipsum aut deserunt, perferendis vitae exercitationem atque ut possimus dolores ab at qui quas consequatur nemo aliquam doloremque ipsam!',
-                    img: '',
+                    img: user1,
                     userName: 'John Doe',
                 },
                 {
                     id: 2,
                     text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione dicta asperiores, ipsum aut deserunt, perferendis vitae exercitationem atque ut possimus dolores ab at qui quas consequatur nemo aliquam doloremque ipsam!',
-                    img: '',
+                    img: user2,
                     userName: 'Pete Jones',
                 },
                 {
                     id: 3,
                     text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione dicta asperiores, ipsum aut deserunt, perferendis vitae exercitationem atque ut possimus dolores ab at qui quas consequatur nemo aliquam doloremque ipsam!',
-                    img: '',
+                    img: user3,
                     userName: 'Mark Wilson',
                 },
             ]

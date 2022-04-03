@@ -7,7 +7,7 @@
 
         <div class="blog">
             <div class="item" v-for="element in arrBlogUser" :key="element.id">
-                <img src="../../public/img/avadabarbers-second-blog-320x202.jpg" alt="barber">
+                <img :src="element.img" :alt="element.title">
                 <h3>{{ element.title }}</h3>
                 <p>{{ element.text }}</p>
             </div>
@@ -18,6 +18,10 @@
 </template>
 
 <script>
+import blog1 from'../../public/img/avadabarbers-second-blog-320x202.jpg'
+import blog2 from'../../public/img/avadabarbers-choosing-blog-320x202.jpg'
+import blog3 from'../../public/img/avadabarbers-ourservice-blog-320x202.jpg'
+
 export default {
     name: 'BlogContent',
     data () {
@@ -26,19 +30,19 @@ export default {
             [
                 {
                     id: 1,
-                    img: '',
+                    img: blog1,
                     title: 'Avada Barber Now Open',
                     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dignissimos asperiores nobis voluptates.',
                 },
                 {
                     id: 2,
-                    img: '',
+                    img: blog2,
                     title: 'Choosing The Right Barber',
                     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dignissimos asperiores nobis voluptates.',
                 },
                 {
                     id: 3,
-                    img: '',
+                    img: blog3,
                     title: 'Quick Service Guide',
                     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dignissimos asperiores nobis voluptates.',
                 },

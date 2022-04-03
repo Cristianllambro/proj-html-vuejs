@@ -13,7 +13,7 @@
 
             <!-- one -->
             <div class="content" v-for="element in arrShopTools" :key="element.id">
-                <img src="../../public/img/brush_dark-400x400.png" :alt="element.name">
+                <img :src="element.img" :alt="element.name">
                 <h3>{{ element.name }}</h3>
                 <p>{{ element.price }}</p>
             </div>
@@ -24,6 +24,10 @@
 </template>
 
 <script>
+import brush from '../../public/img/../../public/img/brush_dark-400x400.png'
+import scissors from '../../public/img/scissors-400x400.png'
+import hotOil from '../../public/img/hot_oil_dark-400x400.png'
+import razor from '../../public/img/straight_razor_dark-400x400.png'
 export default {
     name: 'ToolContent',
     data () {
@@ -32,25 +36,25 @@ export default {
             [
                 {
                     id: 1,
-                    img: '',
+                    img: brush,
                     name: 'Brush',
                     price: '$15.00'
                 },
                 {
                     id: 2,
-                    img: 'scissors-400x400',
+                    img: scissors,
                     name: 'Scissors',
                     price: '$85.00'
                 },
                 {
                     id: 3,
-                    img: 'hot_oil_dark-400x400',
+                    img: hotOil,
                     name: 'Hot Oil',
                     price: '$15.00'
                 },
                 {
                     id: 4,
-                    img: 'straight_razor_dark-400x400',
+                    img: razor,
                     name: 'Straight Razor',
                     price: '$30.00'
                 },
