@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container-review">
         <div class="title">
             <p>WHAT PEOPLE SAY</p>
             <h2>Review</h2>
@@ -53,7 +53,7 @@ export default {
 <style lang="scss" scoped>
 @import "../../public/variable.scss";
 
-.container{
+.container-review{
     height: 70vh;
 }
 .title{
@@ -100,13 +100,4 @@ export default {
     }
 }
 
-.triangle{
-    width: 100%;
-    height: 100px;
-    background-color: #121315;
-    clip-path: polygon(50% 100%, 0 0, 100% 0);
-    position: absolute;
-    top: 837px;
-    left: 0;
-}
 </style>

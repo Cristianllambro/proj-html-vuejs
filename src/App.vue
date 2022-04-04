@@ -7,6 +7,7 @@
     <SquareCream />
     <ReviewContent />
     <BlogContent />
+    <FooterContent />
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import ToolContent from './components/ToolContent.vue'
 import SquareCream from './components/SquareCream.vue'
 import ReviewContent from './components/ReviewContent.vue'
 import BlogContent from './components/BlogContent.vue'
+import FooterContent from './components/FooterContent.vue'
 
 export default {
   name: 'App',
@@ -29,6 +31,7 @@ export default {
     SquareCream,
     ReviewContent,
     BlogContent,
+    FooterContent,
   }
 }
 </script>

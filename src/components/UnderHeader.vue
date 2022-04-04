@@ -45,8 +45,6 @@ export default {
         cursor: pointer;
         &:hover{
             transform: scale(1.1);
-            color: $orange;
-            border: 2px solid $orange;
         }
        }
     }

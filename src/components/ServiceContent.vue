@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container-service">
 
         <div class="title">
             <p>MENS GROOMING</p>
@@ -10,7 +10,7 @@
         <div class="tools">
 
             <div class="cont-1" v-for="element in arrImgTools" :key='element.id'>
-                <img :src="'../../public/img/' + element.img" :alt="element.title">
+                <img :src="element.img" :alt="element.title">
                 <h3>{{ element.title }}</h3>
                 <p>{{ element.under_title }}</p>
             </div>
@@ -22,6 +22,9 @@
 </template>
 
 <script>
+import trim from '../../public/img/avadabarbers-trimcut-icon-before.png'
+import wash from '../../public/img/avadabarbers-washndry-icon.png'
+import beard from '../../public/img/avadabarbers-beardtrim-icon.png'
 export default {
     name: 'ServiceContent',
     data () {
@@ -30,21 +33,21 @@ export default {
             [
                 {
                     id: 1,
-                    img: 'avadabarbers-trimcut-icon-before.png',
+                    img: trim,
                     title: 'Trims & Cut',
                     under_title: 'Avada Barbers are experts in the lickety split trim and hair cut. Quick but careful and ridiculously good looking.'
                 },
     
                 {
                     id: 2,
-                    img: 'avadabarbers-washndry-icon.png',
+                    img: wash,
                     title: 'Wash & Dry',
                     under_title: 'Take a seat in our fine leather chairs, lean back and let us lather you a fresh head in a luxurous fashion.'
                 },
 
                 {
                     id: 3,
-                    img: 'avadabarbers-beardtrim-icon.png',
+                    img: beard,
                     title: 'Beard Tidy',
                     under_title: 'Tame the tangles and untidy facial hairs like a gentleman with our Beard Tidy services from Avada Barbers.',
                 }
@@ -58,10 +61,14 @@ export default {
 <style lang="scss" scoped>
 @import "../../public/variable.scss";
 
-.container{
+.container-service{
     height: 100vh;
     text-align: center;
     position: relative;
+}
+
+img{
+    height: 130px;
 }
 
 .title{

@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container-tools">
 
         <!-- TITLE SHOP -->
         <div class="title">
@@ -67,7 +67,7 @@ export default {
 <style lang="scss" scoped>
 @import "../../public/variable.scss";
 
-.container{
+.container-tools{
     width: 100%;
     height: 90vh;
     text-align: center;

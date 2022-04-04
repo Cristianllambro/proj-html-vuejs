@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container-cream">
         <div class="square">
             <div class="img-sq">
                 <img src="../../public/img/shaving_butter-400x400.png" alt="">
@@ -23,7 +23,7 @@ export default {
 <style lang="scss" scoped>
 @import "../../public/variable.scss";
 
-.container{
+.container-cream{
     width: 100%;
     height: 50vh;
     position: relative;

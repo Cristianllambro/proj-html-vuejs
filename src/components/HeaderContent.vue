@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container-header">
     
     <!-- NAV BAR LOGO + ICONS -->
     <nav>
@@ -40,7 +40,7 @@ export default {
 <style lang="scss" scoped>
 @import "../../public/variable.scss";
 
-.container{
+.container-header{
     width: 100%;
     height: 90vh;
     background-image: url(../../public/img/avadabarbers-homepage-hero-bg.jpg);
@@ -108,8 +108,6 @@ nav{
         cursor: pointer;
         &:hover{
             transform: scale(1.1);
-            color: $orange;
-            border: 2px solid $orange;
         }
     }
 
