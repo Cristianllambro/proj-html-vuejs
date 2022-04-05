@@ -3,7 +3,7 @@
     
     <!-- NAV BAR LOGO + ICONS -->
     <nav>
-        <img src="../../public/img/avadabarbers-stickylogo-x1.png" alt="logo barber-shop">
+        <img src="../../public/img/avadabarbers-logo-x1.png" alt="logo barber-shop">
         <div class="icon">
             <i class="fa-solid fa-cart-shopping"></i>
             <i class="fa-solid fa-bars"></i>
@@ -42,13 +42,14 @@ export default {
 
 .container-header{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background-image: url(../../public/img/avadabarbers-homepage-hero-bg.jpg);
-    background-size: cover
+    background-size: cover;
+    position: relative;
 }
 
 nav{
-    width: 1000px;
+    width: 1050px;
     height: 100px;
     margin: 0 auto;
 
@@ -56,8 +57,10 @@ nav{
     justify-content: space-between;
     align-items: center;
 
+
     .icon{
         color: white;
+        cursor: pointer;
         .fa-cart-shopping{
             font-size: 15px;
             margin-right: 1rem;
@@ -65,6 +68,7 @@ nav{
 
         .fa-bars{
             font-size: 20px;
+            color: $drift_wood;
         }
     }
 }
@@ -73,6 +77,7 @@ nav{
     width: 1200px;
     margin: 0 auto;
     display: flex;
+    padding-top: 10rem;
 }
 
 .title{
@@ -107,7 +112,8 @@ nav{
         border: 2px solid $light_gold;
         cursor: pointer;
         &:hover{
-            transform: scale(1.1);
+            color: $drift_wood;
+            border: 2px solid $drift_wood;
         }
     }
 

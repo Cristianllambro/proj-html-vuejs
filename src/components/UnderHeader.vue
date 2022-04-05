@@ -44,7 +44,8 @@ export default {
         border: 2px solid $light_gold;
         cursor: pointer;
         &:hover{
-            transform: scale(1.1);
+            color: $drift_wood;
+            border: 2px solid $drift_wood;
         }
        }
     }

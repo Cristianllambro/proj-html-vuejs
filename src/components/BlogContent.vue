@@ -1,5 +1,6 @@
 <template>
     <div class="container-blog">
+        <div class="triangle"></div>
         <div class="title">
             <p>TALES FORM THE BARBER SHOP</p>
             <h2>Recent Blog Posts</h2>
@@ -7,7 +8,9 @@
 
         <div class="blog">
             <div class="item" v-for="element in arrBlogUser" :key="element.id">
-                <img :src="element.img" :alt="element.title">
+                <div class="img-fix">
+                    <img :src="element.img" :alt="element.title">
+                </div>
                 <h3>{{ element.title }}</h3>
                 <p>{{ element.text }}</p>
             </div>
@@ -55,14 +58,27 @@ export default {
 <style lang="scss" scoped>
 @import "../../public/variable.scss";
 .container-blog {
-    height: 75vh;
+    height: 95vh;
     text-align: center;
+    background-color: $light_silver;
+    position: relative;
+}
+
+.triangle{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    clip-path: polygon(50% 100%, 0 0%, 100% 0%);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .title{
     width: 1000px;
     margin: 0 auto;
     text-align: center;
+    padding-top: 10rem;
     p{
         color: $teak;
         font-size: 15px;
@@ -82,6 +98,19 @@ export default {
     .item{
         width: 300px;
         text-align: center;
+
+        .img-fix{
+            width: 320px;
+            height: 202px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        img:hover{
+            transform: scale(1.1);
+            opacity: .9;
+            transition: 1s ease;
+        }
 
         h3{
             font-size: 30px;
@@ -108,7 +137,8 @@ export default {
     margin-top: 4rem;
 
     &:hover{
-        transform: scale(1.1);
+        color: $bean;
+        border: 2px solid $bean;
     }
 }
 </style>

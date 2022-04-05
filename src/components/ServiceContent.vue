@@ -130,7 +130,8 @@ img{
     cursor: pointer;
 
     &:hover{
-        transform: scale(1.1);
+        color: $bean;
+        border: 2px solid $bean;
     }
 }
 

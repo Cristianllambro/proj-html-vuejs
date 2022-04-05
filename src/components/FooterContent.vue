@@ -61,7 +61,8 @@ img{
     margin-top: 4rem;
 
     &:hover{
-        transform: scale(1.1);
+        color: $drift_wood;
+        border: 2px solid $drift_wood;
     }
 }
 
